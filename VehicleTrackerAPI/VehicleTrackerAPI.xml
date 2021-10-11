@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VehicleTrackerAPI</name>
+    </assembly>
+    <members>
+        <member name="M:VehicleTrackerAPI.Controllers.AuthenticationController.Authenticate(VehicleTracker.ApplicationServices.Authentication.Command.LoginCommand)">
+             <summary>
+             This endpoint is used to register a vehicle location pertime. The username and pwd is for test case
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            <remarks>
+            Sample request:
+            
+              POST /authenticate 
+              {
+                 "UserName": "me@me.com",
+                 "Password": "1234"
+              }
+            </remarks>
+        </member>
+        <member name="M:VehicleTrackerAPI.Controllers.RegistrationController.RegisterUser(VehicleTracker.ApplicationServices.Authentication.Command.RegisterationCommand)">
+             <summary>
+             This endpoint is used to register a user
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            <remarks>
+            Sample request:
+            
+              POST /authenticate 
+              {
+                 "UserName": "me@me.com",
+                 "Password": "1234"
+              }
+            </remarks>
+        </member>
+        <member name="M:VehicleTrackerAPI.Controllers.VehicleController.RegisterVehicle(VehicleTracker.ApplicationServices.Vehicle.Command.VehicleRegisterationCommand)">
+             <summary>
+             This endpoint is used to register a vehicle
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            <remarks>
+            Sample request:
+            
+              POST /registerVehicleLocation 
+              {
+                 "Username": "1.23456",
+                 "Password": "1.2345",
+                 "DeviceNumber": "123456789",
+                 "FuelCapacity": "123456789",
+                 "Color": "12Red3456789",
+                 "Model": "Toyottttiii",
+                 "Speed": "25km"
+              }
+            </remarks>
+        </member>
+        <member name="M:VehicleTrackerAPI.Controllers.VehicleController.GetVehiclePositions(System.String,System.String,System.Guid)">
+            <summary>
+            this endpoint is used to get a vehicle's position for a specified period in time        
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VehicleTrackerAPI.Controllers.VehicleController.GetVehiclePosition(System.Guid)">
+            <summary>
+            this endpoint is used to get a vehicle's current position        
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VehicleTrackerAPI.Controllers.VehicleController.RegisterVehicleLocation(VehicleTracker.ApplicationServices.ViewModel.AddVehicleLocationDto)">
+             <summary>
+             This endpoint is used to register a vehicle location pertime
+             </summary>
+             <param name="model"></param>
+             <returns></returns>
+            <remarks>
+            Sample request:
+            
+              POST /registerVehicleLocation 
+              {
+                 "Latitude": "1.23456",
+                 "Longitude": "1.2345"
+              }
+            </remarks>
+        </member>
+    </members>
+</doc>
